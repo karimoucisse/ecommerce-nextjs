@@ -13,7 +13,7 @@ const Menu = ({ navList }) => {
     setOpen(!open);
   };
   return (
-    <div className="md:hidden">
+    <div className="md:hidden flex-1">
       {!open ? (
         <FaBarsStaggered size="2rem" onClick={handleMenu} />
       ) : (
@@ -30,7 +30,7 @@ const Menu = ({ navList }) => {
                 </Link>
               </li>
             ))}
-            {user ? (
+            {/* {user ? (
               <li onClick={handleMenu}>
                 <Link href="/login" className="text-3xl">
                   Connexion
@@ -42,7 +42,7 @@ const Menu = ({ navList }) => {
                   Panier
                 </Link>
               </li>
-            )}
+            )} */}
           </ul>
         </div>
       )}
