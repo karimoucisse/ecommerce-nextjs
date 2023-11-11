@@ -1,5 +1,9 @@
+import PromoSection from "@/components/PromoSection";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between"></main>
+    <main>
+      <PromoSection />
+    </main>
   );
 }
