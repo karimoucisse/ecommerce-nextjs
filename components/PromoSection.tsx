@@ -9,7 +9,7 @@ const PromoSection = () => {
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Explorez la mode à chaque pas.
         </h1>
-        <p className="my-2 text-xl text-gray-500">
+        <p className="mt-2 text-xl text-gray-500">
           votre destination ultime pour des sneakers, des chaussures et des
           vêtements à la pointe du style.
         </p>
@@ -19,16 +19,16 @@ const PromoSection = () => {
         alt="Picture of the author"
         width={600}
         height={600}
-        className="right-0 top-0 md:absolute"
+        className="right-0 top-0 rounded-md my-4 md:absolute "
       />
-      <div className="flex gap-4 mt-8 justify-center">
-        <button className="inline-block rounded-md border bg-blue px-8 py-3 text-center font-medium text-white">
+      <div className="flex gap-x-2 px-1 justify-between md:justify-center">
+        <button className="inline-block rounded-md border bg-blue px-7 py-3 text-center font-medium text-white">
           <Link href="/men">Homme</Link>
         </button>
-        <button className="inline-block rounded-md border bg-blue px-8 py-3 text-center font-medium text-white">
+        <button className="inline-block rounded-md border bg-blue px-7 py-3 text-center font-medium text-white">
           <Link href="/women">Femme</Link>
         </button>
-        <button className="inline-block rounded-md border bg-blue px-8 py-3 text-center font-medium text-white">
+        <button className="inline-block rounded-md border bg-blue px-7 py-3 text-center font-medium text-white">
           <Link href="/children">Enfant</Link>
         </button>
       </div>
