@@ -2,7 +2,7 @@ import ProductsRow from "@/components/ProductsRow";
 import PromoSection from "@/components/PromoSection";
 
 export default function Home() {
-  const data = [
+  const products = [
     {
       name: "Air force 1",
       image: "/imageTest.jpg",
@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main>
       <PromoSection />
-      <ProductsRow title="Nouveautés" data={data} />
+      <ProductsRow title="Nouveautés" products={products} />
     </main>
   );
 }
