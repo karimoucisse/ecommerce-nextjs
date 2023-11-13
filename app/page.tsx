@@ -6,22 +6,22 @@ export default function Home() {
     {
       name: "Air force 1",
       image: "/imageTest.jpg",
+      price: "35",
     },
     {
       name: "Air force 1",
       image: "/imageTest.jpg",
+      price: "35",
     },
     {
       name: "Air force 1",
       image: "/imageTest.jpg",
+      price: "35",
     },
     {
       name: "Air force 1",
       image: "/imageTest.jpg",
-    },
-    {
-      name: "Air force 1",
-      image: "/imageTest.jpg",
+      price: "35",
     },
   ] as const;
   return (
