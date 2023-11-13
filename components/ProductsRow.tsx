@@ -40,3 +40,5 @@ const ProductsRow = ({ title, products }) => {
   );
 };
 
+export default ProductsRow;
+
