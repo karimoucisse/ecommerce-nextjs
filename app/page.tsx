@@ -25,9 +25,11 @@ export default function Home() {
     },
   ] as const;
   return (
-    <main>
-      <PromoSection />
-      <ProductsRow title="Nouveautés" products={products} />
+    <main className="lg:flex justify-center">
+      <div className="lg:max-w-7xl">
+        <PromoSection />
+        <ProductsRow title="Nouveautés" products={products} />
+      </div>
     </main>
   );
 }
