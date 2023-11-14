@@ -13,8 +13,8 @@ const Header = () => {
 
   return (
     <header
-      className="h-12 bg-gray flex items-center p-2 md:px-[3rem] justify-between
-     text-blue shadow-[0px 2px 24px 0px] shadow-[rgba(0, 0, 0, 0.09) ]"
+      className="h-12 bg-gray flex items-center p-2 md:px-[3rem] 
+     text-blue shadow-[0px 2px 24px 0px] shadow-[rgba(0, 0, 0, 0.09)]"
     >
       <Menu navList={navList} />
       <NavBar navList={navList} />
