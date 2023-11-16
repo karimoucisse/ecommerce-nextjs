@@ -19,7 +19,7 @@ const Header = () => {
       <Menu navList={navList} />
       <NavBar navList={navList} />
       <div className="flex-1 flex justify-center items-center gap-2">
-        <GiGhost size="2rem" />
+        {/* <GiGhost size="2rem" /> */}
         <Link href="/" className="text-center">
           <h1 className="text-xl uppercase font-bold">UrbanSoul</h1>
         </Link>
