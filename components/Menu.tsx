@@ -117,6 +117,56 @@ const navigation = {
         },
       ],
     },
+    {
+      id: "children",
+      name: "Enfant",
+      featured: [
+        {
+          name: "New Arrivals",
+          href: "#",
+          imageSrc:
+            "https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
+          imageAlt:
+            "Drawstring top with elastic loop closure and textured interior padding.",
+        },
+        {
+          name: "Artwork Tees",
+          href: "#",
+          imageSrc:
+            "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg",
+          imageAlt:
+            "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
+        },
+      ],
+      sections: [
+        {
+          id: "Shoes",
+          name: "Chaussures",
+          items: [
+            { name: "Toutes les chaussures", href: "#" },
+            { name: "Lifestyle", href: "#" },
+            { name: "Running", href: "#" },
+            { name: "Trainning & fitness", href: "#" },
+            { name: "Football", href: "#" },
+            { name: "BasketBall", href: "#" },
+            { name: "Tennis", href: "#" },
+          ],
+        },
+        {
+          id: "clothing",
+          name: "Vêtements",
+          items: [
+            { name: "Tous les vêtements", href: "#" },
+            { name: "Sweats à capuche", href: "#" },
+            { name: "Pantallons", href: "#" },
+            { name: "Survêtements", href: "#" },
+            { name: "Vestes", href: "#" },
+            { name: "Hauts et t(shirt", href: "#" },
+            { name: "Shorts", href: "#" },
+          ],
+        },
+      ],
+    },
   ],
 };
 
@@ -132,7 +182,7 @@ const Menu = ({ navList }) => {
     setOpen(!open);
   };
   return (
-    <div className="md:hidden flex-1">
+    <div className="lg:hidden flex-1">
       {!open ? (
         <FaBarsStaggered size="2rem" onClick={handleMenu} />
       ) : (
