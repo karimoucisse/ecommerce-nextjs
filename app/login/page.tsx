@@ -1,12 +1,13 @@
-import { FaGoogle } from "react-icons/fa";
+import Image from "next/image";
+import { AiFillGoogleCircle } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 
 const Login = () => {
   return (
-    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12">
-      <div>
+    <div className="xl:flex">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="mt-10 text-center text-3xl font-bold leading-9 tracking-tight text-gray-900">
+          <h2 className="mt-10 text-center text-3xl font-bold leading-9 tracking-tight text-gray-900 xl:text-left xl:text-2xl">
             Connectez-vous
           </h2>
         </div>
@@ -74,19 +75,28 @@ const Login = () => {
               Inscrivez-vous
             </a>
           </p>
-          <div>
-            <p>Ou continuer avec</p>
-            <div>
-              <button>
-                <FaGoogle /> Google
+          <div className="grid gap-10 mt-10">
+            <p className="text-center">Ou continuer avec</p>
+            <div className="grid grid-cols-2 gap-4 ">
+              <button className="flex gap-6 bg-blue py-4 text-white justify-center text-xl rounded-md">
+                <AiFillGoogleCircle size="2rem" /> Google
               </button>
-              <button>
-                <FaFacebook />
+              <button className="flex gap-6 bg-blue py-4 text-white justify-center text-xl rounded-md">
+                <FaFacebook size="2rem" />
                 Facebook
               </button>
             </div>
           </div>
         </div>
+      </div>
+      <div className="hidden xl:flex flex-1 max-h-[calc(100vh-3rem)]">
+        <Image
+          src="/shopping.jpg"
+          width={500}
+          height={500}
+          alt="Picture of shoppingr"
+          className="w-full object-cover object-right-top"
+        />
       </div>
     </div>
   );
