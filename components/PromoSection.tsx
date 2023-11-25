@@ -5,7 +5,7 @@ import React from "react";
 const PromoSection = () => {
   return (
     <div className="relative py-[3rem] md:px-4 lg:px-12 lg:py-[80px] overflow-hidden">
-      <div className="sm:max-w-lg px-2">
+      <div className="sm:max-w-lg px-2 relative z-10">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Explorez la mode à chaque pas.
         </h1>
