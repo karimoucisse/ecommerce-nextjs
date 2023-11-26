@@ -62,7 +62,7 @@ const Login = () => {
             <div>
               <button
                 type="submit"
-                className="text-white flex w-full justify-center rounded-md bg-blue px-3 py-1.5 text-sm font-semibold leading-6  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue"
+                className="text-white flex w-full justify-center rounded-md bg-blue px-3 py-2 text-sm font-semibold leading-6  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue"
               >
                 Se connecter
               </button>
@@ -78,10 +78,18 @@ const Login = () => {
           <div className="grid gap-10 mt-10">
             <p className="text-center">Ou continuer avec</p>
             <div className="grid grid-cols-2 gap-4 ">
-              <button className="flex gap-6 bg-blue py-4 text-white justify-center text-xl rounded-md">
-                <AiFillGoogleCircle size="2rem" /> Google
+              <button className="flex gap-4 py-4 justify-center text-xl rounded-md border border-blue">
+                {/* <AiFillGoogleCircle size="2rem" className="text-blue" /> */}
+                <Image
+                  src="/googleLogo.png"
+                  width={30}
+                  height={30}
+                  alt="Picture of shoppingr"
+                  // className="w-full object-cover object-right-top"
+                />
+                Google
               </button>
-              <button className="flex gap-6 bg-blue py-4 text-white justify-center text-xl rounded-md">
+              <button className="flex gap-6 bg-[#1877F2] py-4 text-white justify-center text-xl rounded-md">
                 <FaFacebook size="2rem" />
                 Facebook
               </button>
@@ -89,7 +97,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div className="hidden xl:flex flex-1 max-h-[calc(100vh-3rem)]">
+      <div className="hidden xl:flex flex-[0.6] max-h-[calc(100vh-3rem)]">
         <Image
           src="/shopping.jpg"
           width={500}
