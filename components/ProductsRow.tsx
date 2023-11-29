@@ -5,8 +5,8 @@ import React from "react";
 const ProductsRow = ({ title, products }) => {
   return (
     <section>
-      <div className="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+      <div className="my-8 mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 lg:my-10">
+        <h2 className="text-2xl font-semi-bold tracking-tight text-gray-900">
           {title}
         </h2>
 
@@ -41,4 +41,3 @@ const ProductsRow = ({ title, products }) => {
 };
 
 export default ProductsRow;
-
