@@ -2,7 +2,7 @@ import React from "react";
 
 const CartOrderSummary = () => {
   return (
-    <div className="px-4 py-6 md:w-[800px] shadow-md lg:max-w-[500px]">
+    <div className="px-4 py-6 md:w-[800px] shadow-md lg:max-w-[400px]">
       <p className="text-2xl font-seme-bold mb-2">Commande</p>
       <div className="flex w-full justify-between py-4">
         <p>Valeur de la commande</p>

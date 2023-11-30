@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${poppins.className} bg-gray-300`}>
         <Header />
         {/* <Example /> */}
-        {children}
+        <div className="min-h-[80vh]">{children}</div>
         <Footer />
       </body>
     </html>
